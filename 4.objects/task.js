@@ -22,7 +22,7 @@ Student.prototype.getAverage = function () {
 		return 0;
 	} else {
 		this.average = 0;
-		return this.average = this.marks.reduce ((acc, item, array) => acc + item / array.length, 0); // расчетн среднего значения с помощью редьюс
+		return this.average = this.marks.reduce ((acc, item, index, array) => acc + item / array.length, 0); // расчетн среднего значения с помощью редьюс
 	}
 };
 
